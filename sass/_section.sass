@@ -1,0 +1,44 @@
+main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0 $mainPaddingSides
+
+h2
+    width: 85%
+    padding-bottom: 10px
+    margin-bottom: 20px
+    border-bottom: 1px solid #2d485e
+    text-align: center
+    font-weight: bold
+    font-size: 1.9rem
+
+section
+    display: flex
+    flex-direction: column
+    margin-bottom: 20px
+
+article
+    display: flex
+    flex-direction: column
+    box-shadow: 0px 5px 20px -15px rgba(#000000, 20)
+    h3
+        @include frameOnTitles
+        width: 49%
+        line-height: 2rem
+    .articleimage
+        @include frameOnArticlesLeft
+        padding: 10px 10px
+        border-left: 1px solid black
+        border-bottom: 1px solid black
+        border-radius: 0 10px 0px 5px
+        img
+            float: left
+            max-width: 50%
+            margin: 0 1px 1px 0
+            border-radius: 5px 10px
+            transform: scale(0.9)
+        p
+            font-size: 1.3rem
+            text-align: justify
