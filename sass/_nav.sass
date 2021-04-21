@@ -8,28 +8,26 @@
     box-shadow: 0px 5px 20px -15px rgba(#000000, 20)
 
 nav
-
-.wrapLogoTextNavCompany
-    z-index: 1
-    position: absolute
-    display: flex
-    flex-direction: column
-    top: 5vh
-    left: $mainPaddingSides
-    img
-        width: 30%
-        margin-right: 8px
-    .textNavLogo
+    ul
+        display: none
+    .wrapLogoTextNavCompany
+        position: absolute
         display: flex
         flex-direction: column
-        justify-content: center
-        p
-            font-size: 1.4rem
-            font-weight: bold
+        top: 5vh
+        left: $mainPaddingSides
+        img
+            display: block
+            width: 30%
+        .textNavLogo
+            display: flex
+            flex-direction: column
+            justify-content: center
+            p
+                font-size: 1.4rem
+                font-weight: bold
 
 button.navbar
-    z-index: 1
-
     position: absolute
     top: 15vh
     right: $mainPaddingSides
@@ -45,3 +43,39 @@ button.navbar
     padding: 6px 6px
     text-shadow: 0px 1px 0px #528ecc
     font-size: 0.9rem
+
+// ============================================================orientation LandScape
+@media (orientation: landscape)
+    button
+        display: none
+    nav
+        z-index: 9
+        height: $navBarHeight
+        padding: 5px
+        position: fixed
+        display: flex
+        justify-content: space-between
+        background-color: #fff
+        top: 0
+        left: 0
+        width: 100%
+        height: $navBarHeight
+        box-shadow: 0px 5px 20px -15px rgba(#000000, 20)
+        .wrapLogoTextNavCompany
+            width: 30%
+            flex-direction: row
+            position: static
+            img
+                width: auto
+                height: 100%
+            .textNavLogo
+                p
+                    display: none
+        ul
+            display: flex
+            flex-grow: 1
+            justify-content: space-evenly
+            align-items: center
+            list-style: none
+            li
+                font-size: 1.5em

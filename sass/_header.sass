@@ -16,6 +16,16 @@ header
         position: absolute
         top: $mainPaddingSides
         right: $mainPaddingSides
-        width: 100%
+
         text-align: right
-        font-size: 2rem
+        font-size: 2em
+
+// =====================================================MediaQuery
+
+@media (orientation: landscape)
+    header
+        margin-top: $navBarHeight
+        position: relative
+        height: calc(100vh - #{$navBarHeight})
+        h1
+            font-size: 2.2em
