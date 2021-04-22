@@ -12,12 +12,12 @@ section
     justify-content: center
     align-items: center
     h2
-        width: 85%
+        width: 75vw
         padding-bottom: 20px
         border-bottom: 1px solid #2d485e
         text-align: center
         font-weight: bold
-        font-size: 1.9rem
+        font-size: 2.1em
     article
         display: flex
         flex-direction: column
@@ -43,6 +43,34 @@ section
                 font-size: 1.3rem
                 text-align: justify
 
+// ===============================================Section Services
+.services
+    width: 100%
+    article
+        border: 1px solid black
+        padding: 5px 30px
+        p
+            text-align: center
+            font-size: 2.2em
+
+// ===============================================Section Contact
+.contact
+    width: 100%
+    flex-wrap: wrap
+    article
+        border: 1px solid black
+        padding: 5px 30px
+        p
+            text-align: center
+            font-size: 2.2em
+
+// ==============================================Section Google Map
+.googleMap
+    width: 100%
+    article
+        width: 100%
+        height: auto
+
 //===========================================================Section News
 
 //===========================================================Media @@@@@
@@ -58,25 +86,16 @@ section
         article
             display: flex
             width: 45%
-            flex-direction: column
-            margin-bottom: 20px
-            box-shadow: 0px 5px 20px -15px rgba(#000000, 20)
+
             h3
                 @include frameOnTitles
-                width: 49%
+                width: 52%
                 line-height: 2rem
-            .articleimage
-                @include frameOnArticlesLeft
-                padding: 10px 10px
-                border-left: 1px solid black
-                border-bottom: 1px solid black
-                border-radius: 0 10px 0px 5px
-                img
-                    float: left
-                    max-width: 50%
-                    margin: 0 1px 1px 0
-                    border-radius: 5px 10px
-                    transform: scale(0.9)
-                p
-                    font-size: 1.3rem
-                    text-align: justify
+    // ===============================================Section Services
+    .services
+        flex-direction: column
+
+    // ===============================================Section Contact
+    .contact
+        flex-direction: column
+        article
